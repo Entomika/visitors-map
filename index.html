@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visitor Map Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="hero card">
+      <p class="eyebrow">Visitor insights</p>
+      <h1>Visitor Map Dashboard</h1>
+      <p class="lead">This page shows a live geographic view of website visitors and explains what the map represents. It is meant to be a clean, informative companion to the main portfolio.</p>
+      <div class="actions">
+        <a class="btn primary" href="https://mapmyvisitors.com/web/1c3xf" target="_blank" rel="noopener noreferrer">Open tracker page</a>
+        <button class="btn secondary" id="toggleEmbed">Show image fallback</button>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card info-card">
+        <h2>What this page is</h2>
+        <p>A standalone visitor-insights dashboard for a personal website or portfolio. It combines a live map with short, useful context so the page feels intentional and complete.</p>
+      </article>
+
+      <article class="card info-card">
+        <h2>What the map tracks</h2>
+        <p>The embedded widget provides a geographic snapshot of visitors. It helps show where traffic is coming from and gives a quick sense of audience reach over time.</p>
+      </article>
+
+      <article class="card info-card">
+        <h2>Why it exists</h2>
+        <p>The goal is to make visitor activity more understandable and visually useful, while also giving the site owner a simple way to monitor interest in the portfolio.</p>
+      </article>
+
+      <article class="card info-card">
+        <h2>How to read it</h2>
+        <p>Use the map as a visual overview rather than a detailed analytics report. It is best for seeing location patterns, reach, and general activity.</p>
+      </article>
+    </section>
+
+    <section class="card map-panel">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Live embed</p>
+          <h2>Interactive visitor map</h2>
+        </div>
+        <span class="badge" id="modeLabel">JavaScript embed</span>
+      </div>
+
+      <div class="embed-wrap" id="jsEmbed">
+        <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=21251f&w=a&t=tt&d=ER51ckbA_cRzHdqMOA9YWsDWVdx48e-WuUQhH0kg9Aw&co=ffffff&ct=808080&cmo=2be74e&cmn=f3028c'></script>
+      </div>
+
+      <div class="embed-wrap hidden" id="imageEmbed">
+        <a href='https://mapmyvisitors.com/web/1c3xf' title='Visit tracker' target="_blank" rel="noopener noreferrer">
+          <img src='https://mapmyvisitors.com/map.png?cl=21251f&w=a&t=tt&d=ER51ckbA_cRzHdqMOA9YWsDWVdx48e-WuUQhH0kg9Aw&co=ffffff&ct=808080' alt='Visitor map preview' loading='lazy'>
+        </a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card info-card">
+        <h2>Useful context</h2>
+        <p>This page is not meant to replace full analytics tools. It is a visual summary that makes visitor geography easy to understand at a glance.</p>
+      </article>
+
+      <article class="card info-card">
+        <h2>Future improvements</h2>
+        <p>Later, this dashboard could include visit counts, time-based trends, region summaries, or supporting charts that make the map more informative.</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
